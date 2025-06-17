@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+
+body {
+    background-color: #F7F7FF;
+    font-family: sans-serif;
+}
+
+button {
+    border-radius: 25px;
+    border: none;
+}
