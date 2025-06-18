@@ -1,1 +1,61 @@
-<p>register works!</p>
+<div class="h-screen w-full m-auto flex flex-col justify-center items-center">
+    <div class="items-center justify-center flex flex-col">
+        <img src="/public/smart_eats_log.png" alt="logo">
+    </div>
+
+    <div class="flex p-5 flex-col justify-center w-[80%] items-center shadow-lg ">
+        <form class="w-full">
+            
+            <div class="mb-4">
+                <label class="text-sm ">Full Name</label>
+                <div class="relative">
+                    <i
+                        class="bi bi-person-fill-check absolute text-green-900 left-3 top-1/2 transform -translate-y-1/2 "></i>
+                    <input formControlName="fullname" class="pl-10 p-2 border w-full rounded-lg text-sm"
+                        placeholder="Enter your full names" />
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="text-sm ">Username</label>
+                <div class="relative">
+                    <i class="bi bi-envelope-check-fill absolute text-green-900 left-3 top-1/2 transform -translate-y-1/2 "></i>
+                    <input formControlName="username" class="pl-10 p-2 border w-full rounded-lg text-sm"
+                        placeholder="Enter your Email" />
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="text-sm ">Password</label>
+                <div class="relative">
+                    <i class="bi bi-lock-fill absolute text-green-900 left-3 top-1/2 transform -translate-y-1/2"></i>
+                    <input type="password" formControlName="password" class="pl-10 p-2 border w-full rounded-lg text-sm"
+                        placeholder="Enter your Passward" />
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="text-sm ">Confirm Password</label>
+                <div class="relative">
+                    <i class="bi bi-lock-fill absolute text-green-900 left-3 top-1/2 transform -translate-y-1/2"></i>
+                    <input type="password" formControlName="confirmPassword" class="pl-10 p-2 border w-full rounded-lg text-sm"
+                        placeholder="Re-enter your Passward" />
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center mt-5">
+                <button routerLink="/loader" class="rounded-full border p-2 w-full bg-green-900 text-white " type="submit"> Sign Up </button>
+            </div>
+
+            <div class="flex justify-center items-center mt-15">
+                <span class="text-sm">Already have an account? </span>
+            </div>
+            <div
+                class="flex justify-center items-center text-center animate-bounce border-green-900 font-bold mt-5 border rounded-full p-2 ">
+                <button routerLink="/login">Sign In</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
